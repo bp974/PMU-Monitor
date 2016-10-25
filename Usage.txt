@@ -1,0 +1,29 @@
+RUNNING THE PROGRAM:
+	Windows/MAC:
+		Double click the Jar file to open and run the program
+	Linux/Unix:	
+		From terminal navigate to location of the Jar and then run
+		java -jar <filename>.jar
+		
+USING THE PROGRAM:
+	To start the simulation select the event type you wish to simulate (or leave blank for random event type).
+	Select an area you wish to see simulations from. 
+	Select the number of PMU's you would like to simulate. 
+	Currently 'Variance of Noise' has not been implemented yet.
+	Hit the start button to start the simulation.
+		Any time during simulation you can select the pause button to pause the simulation and then start again by
+		pressing the start button. 
+		
+PREDICTION:	
+	During the simulation the program will look for anomalies in the voltage/frequency.
+	After finding a disturbance the program will highlight that instance in bold red and use k-Nearest Neighbor
+		classifier to classify the disturbance type that was shown on the screen.  
+	The bottom right frame will show information about the PMU with the largest disturbance. It will show the 
+		actual disturbance type as well as the predicted disturbance type.
+	
+The user can then start the simulation process over again by changing some of the previously selected data.
+
+FUTURE WORK:
+	Allow the user to create a Disturbance with the disturbance button. 
+	Allow the user to add noise variance to the instances. 
+	
